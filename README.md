@@ -96,3 +96,7 @@ npm start
 - Comprehensive error catching and display
 - User-friendly error messages
 - Loading states for transactions
+
+## License
+
+MIT License
