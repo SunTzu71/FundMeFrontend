@@ -83,9 +83,10 @@ const WalletLogin: React.FC<WalletLoginProps> = ({
       }
 
       // Request account access
-      const accounts = await window.ethereum.request({
+      const accounts = (await window.ethereum.request({
         method: "eth_requestAccounts",
-      });
+      })) as string[];
+
       const address = accounts[0];
       setWalletAddress(address);
 
